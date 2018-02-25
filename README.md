@@ -5,6 +5,6 @@ Simple Python program that applies a Floyd-Steinberg dithering effect to a .png 
 ________________
 USE:
 
-Run the program. It will provide you with a file selection dialog. Choose whatever picture you want to dither.
+Run main.py - It will provide you with a file selection dialog. Choose whatever picture you want to dither.
 
 The program will start to apply the dithering effect. Once it is done, a window displaying the picture will appear. You can press 's' to save it to the project home folder or 'ESCAPE' to close the window.
