@@ -15,10 +15,18 @@ while found_image == 0:
         found_image = 1
     except:
         print('Incorrect file type. Only accepts pictures.')
-gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-ditherer = dith.Steinberg(gray_image)
-print('Loading...')
-ditherer.dither()
+ditherer = dith.Steinberg(image)
+options = ['1', '2']
+choice = ''
+print('Choose dithering method: ')
+while choice not in options:
+    print('\t1. Two-Tone')
+    print('\t2. RGB')
+    choice = input('Choice: ')
+if choice == '1':
+    ditherer.dither2Tone()
+elif choice == '2':
+    ditherer.dither()
 print('Done')
 ditherer.show()
